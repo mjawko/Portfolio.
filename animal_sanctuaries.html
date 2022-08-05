@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Flexbox Project</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logoname"><a href="https://youtu.be/JW5uZQaYkrc">Uncomfortable Realities</a></div>
+            <div class="ul">
+                <ul>
+                    <li><a href="https://animalequality.org/issues/dairy/">Cow</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=MLTAGOUiqMQ">Pig</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=mCmRwrwhz64">Chicken</a></li>
+                    <li><a href="https://youtu.be/QevWGsd96xQ">Fish</a></li>
+                </ul>
+            </div><!--ul-->
+        </div> <!--header-->
+
+        <div class="one">
+            <div class="about">
+                <div class="a-container">
+                    <h1>"<a href="https://www.youtube.com/watch?v=msjbZKPMDE4&feature=youtu.be&ab_channel=farmsanctuary">Animal sanctuary</a>", what is it?</h1>
+                    <p>An animal sanctuary is a place which provides a safe place to animals who were rescued for the rest of their lives.</p> 
+                    <p>You may have watched or heard about animals who escaped form a track before the car arrived at a slaughter house.</p>
+                    <p>Some of these animals who succeeded to escape are sent to animal sanctuaries and live without being exploited.</p>
+                    <p>However, it's not everybody to be rescued. Sadly, it happens to many of them to be found by human and be sent back to a slaughter house to be killed.</p>
+                    <p>Vegans criticize <a href="https://www.youtube.com/watch?v=Q-EsdpV7VHE">meat</a>, <a href="https://youtu.be/QevWGsd96xQ">fish</a>, <a href="https://youtu.be/utPkDP3T7R4">egg</a>, <a href="https://youtu.be/MCwpsMtmMhM">dairy</a>, 
+                        <a href="https://youtu.be/clMNw_VO1xo">honey</a>, <a href="https://www.surgeactivism.org/animalsinfashion">leather</a>, <a href="https://youtu.be/MKzMwRsWW-k">fur</a>, <a href="https://youtu.be/p3l87NywToQ">zoos</a>, 
+                        <a href="https://youtu.be/Ji22S1jPuBA">aquariums</a>, <a href="https://youtu.be/_gWbjlg5mzU">animal testing</a>, <a href="https://youtu.be/xPVKcavDy2k">hunting</a>... </p>
+                    <p>Because these products and entertainments consist of animal exploitation.</p>
+                    <a href="https://www.surgeactivism.org/excusesdebunked"><button>Check me out</button></a>
+                </div> <!--a-container-->
+                <div id="slider">
+                    <ul id="slideWrap">
+                        <li><img src="https://cdn.goope.jp/912/13120918481432s3_l.png" alt="Dosannko oyako. Two of the horses in OPEN SESAMI."></li>
+                        <li><img src="https://scontent-itm1-1.xx.fbcdn.net/v/t39.30808-6/291822091_520222476425238_1143406185834083480_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ES9j2fMYAW0AX_B4NtC&_nc_ht=scontent-itm1-1.xx&oh=00_AT9uxhALxIQAW2pD0I5w0At7Xyvou3GFcjoRnoCdYabAKw&oe=62EF7BFF" alt="A new born baby bat who were rescued by AnimO."></li>
+                        <li><img src="https://honeysfarmsanctuary.com/wp-content/uploads/2021/06/honeys-farm-sanctuary-pigs.jpg" alt="Rockn and Pac-chan. Two of the pigs who live in Honey's Farm Sanctuary. They were rescued from a pig farm."></li>
+                        <li><img src="https://moomowgarden.or.jp/cms/wp-content/themes/moomowgarden2019/img/cows/ph_cows03@1.5x-80.jpg" alt="The mom Katami and her son Coffee. Two of the cows in Moo Mow Garden, Fukushima."></li>
+                        <li><img src="https://edgarsmission.org.au/wp-content/uploads/2022/07/Edgars-Mission-Campaigns-BKTAW.jpg" alt="Calvin Swine and .A baby pig and baby sheep in Edgar’s Mission."></li>
+                        <li><img src="https://www.turpentinecreek.org/wp-content/uploads/2018/02/Tanya-8447.jpg" alt="One of the rescued tigers who lives in Turpentine Creek Wildlife Refuge."></li>
+                        <li><img src="https://images.squarespace-cdn.com/content/v1/5fbebacb0a2757459bd5c330/1615497065632-5A5TSS9SO8FVFB9AITM6/image.jpg" alt="Lisa, Rosé, Jennie & Jisoo. Saved from Christmas 2020, they have stuck together since they arrived at the sanctuary."></li>
+                        <li><img src="https://i1.wp.com/animalactionist.com/wp-content/uploads/2019/11/Zoe_III-1.jpg?ssl=1" alt="Zoe goat and Jade lamb. Since they were rescued in the same period, they've been spending time together."></li>
+                        <li><img src="https://www.therhinoorphanage.org/wp-content/uploads/2022/07/Mofalodi.jpg" alt="Mofalodi. She’d managed to survive on her own for 4 days and had travelled several kilometres before she was found and captured. Her mother was killed by poachers."></li>
+                        <li><img src="https://parksaustralia.gov.au/marine/files/backgrounds/coral-sea/coral.jpg" alt="The Coral Sea Marine Park is one of the world’s largest marine parks."></li>
+                    </ul><!--slideWrap-->
+                    <a id="prev" href="#">&#8810;</a>
+                    <a id="next" href="#">&#8811;</a>
+                    <script>
+                        var responsiveSlider = function(){
+                        var slider = document.getElementById("slider");
+                        var sliderWidth =  slider.offsetWidth;
+                        var slideList = document.getElementById("slideWrap");
+                        var count = 1;
+                        var items = slideList.querySelectorAll("li").length;
+                        var prev = document.getElementById("prev");
+                        var next = document.getElementById("next");
+                        window.addEventListener('resize', function(){
+                            sliderWidth = slider.offsetWidth;
+                        });
+                        var prevSlide = function() {
+                            if (count > 1) {
+                                count = count - 2;
+                                slideList.style.left = "-" + count * sliderWidth + "px";
+                                count++;                                
+                            }
+                            else if (count = 1) {
+                                count = items - 1;
+                                slideList.style.left = "-" + count * sliderWidth + "px";
+                                count++;                                
+                            }
+                        };
+                        var nextSlide = function() {
+                            if (count < items) {
+                                slideList.style.left = "-" + count * sliderWidth + "px";
+                                count++;                                
+                            }
+                            else if (count = items) {
+                                slideList.style.left = "0px";
+                                count = 1;                                
+                            }
+                        };
+                        next.addEventListener("click", function() {
+                            nextSlide();                            
+                        });
+                        prev.addEventListener("click", function() {
+                            prevSlide();                            
+                        });
+                        setInterval(function() {
+                            nextSlide()
+                        }, 3000);
+                        };                    
+                        window.onload = function() {
+                            responsiveSlider();
+                        }
+                    </script>
+                </div><!--slider--> 
+            </div> <!--about-->
+    </div> <!--one-->
+
+    <div class="two">
+        <div class="ttext">Have you had these thoughts?</div>
+        <div class="windows">
+            <div class="info">
+                <a href="https://yourveganfallacyis.com/en/plants-are-alive"> <img src="https://images.unsplash.com/photo-1605522469906-3fe226b356bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="cutitngveggeis">
+                <div class="text">Vegans kill plants. </div></a>
+            </div><!--info-->
+            <div class="info">
+                <a href="https://tenderly.medium.com/people-eating-animals-isnt-actually-like-lions-eating-animals-c93dbe344465"><img src="https://images.unsplash.com/photo-1531872326262-a0b0656d548d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlvbiUyMGVhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="lion">
+                <div class="text"> Lions eat zebras. </div></a>
+            </div><!--info-->
+            <div class="info">
+                <a href="https://yourveganfallacyis.com/en/top-of-food-chain/resources"><img src="https://images.unsplash.com/photo-1533514114760-4389f572ae26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=368&q=80" alt="bunny">
+                <div class="text"> Humans are on top of the food chain.</div></a>
+            </div><!--info-->
+            <div class="info">
+                <a href="https://youtu.be/byTxzzztRBU"><img src="https://images.unsplash.com/photo-1585325700424-a896dfbdf065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MzF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="vegan-meat">
+                <div class="text"> Eating meat is my personal choice.</div></a>
+            </div><!--info-->
+            <div class="info">
+                <a href="https://www.instagram.com/fitgreenmind/?hl=en"><img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="veggies">
+                <div class="text"> I would have nothing to eat if I were vegan.</div></a>
+            </div><!--info-->
+        </div> <!--windows-->
+    </div> <!--two-->
+
+    <div class="three">
+        <div class="quotecon">
+           <div class="quote">"Veganism is a philosophy and way of living which seeks to exclude—as far as is possible and practicable—all forms of exploitation of, and cruelty to, animals for food, clothing or any other purpose; and by extension, promotes the development and use of animal-free alternatives for the benefit of animals, humans and the environment. In dietary terms it denotes the practice of dispensing with all products derived wholly or partly from animals."</div>
+           <div class="auther"><a href="https://www.vegansociety.com/go-vegan/definition-veganism" title="The defenition of veganism">-The Vegan Society</a></div>
+        </div> <!--quotecon-->
+    </div> <!--three-->
+
+    <div class="four">
+        <div class="callcon">
+            <div class="callsign">
+                <div class="call">Call to action! </div>
+                <div class="call">It's time!</div>
+                <div class="sign">Sign up and seek what we can do for the animals.</div>
+            </div><!--callsign-->
+            <button id="sign"><a href="https://veganuary.com/try-vegan/">Sign up</button></a>
+        </div><!--callcon-->
+    </div> <!--four-->
+
+    <div class="footer">
+        <div>Copyright © Nanako 2022</div>
+    </div><!--footer-->
+
+    </body>
+</html>
